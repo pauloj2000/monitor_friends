@@ -106,6 +106,19 @@ class _ApoioPageState extends State<ApoioPage> {
               ),
             ),
           ),
+          SizedBox(
+    height: 135,
+    ),
+          Center(
+              child: new Image.asset("lib/assets/images/prae.png",width:250,height:200)
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          Center(
+              child: new Image.asset("lib/assets/images/saudavelmente.png",width:200,height:100)
+          ),
+
         ],
       ),
     );

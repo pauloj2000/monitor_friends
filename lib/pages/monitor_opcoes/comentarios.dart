@@ -3,7 +3,6 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:monitor_friends/pages/perfil.dart';
-import 'conteudo.dart';
 
 class ComentariosPage extends StatefulWidget {
   @override

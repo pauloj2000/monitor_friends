@@ -3,8 +3,10 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'comentarios.dart';
+import 'package:monitor_friends/pages/monitor_opcoes/comentarios.dart';
 import 'inicio.dart';
+import 'monitor_opcoes/agendar.dart';
+import 'monitor_opcoes/conversar.dart';
 import 'monitores.dart';
 
 class PerfilPage extends StatefulWidget {
@@ -21,6 +23,14 @@ class _PerfilPageState extends State<PerfilPage> {
   void _openComentarios() {
     Navigator.pushReplacement(context,
         MaterialPageRoute(builder: (BuildContext context) => ComentariosPage()));
+  }
+  void _openConversar() {
+    Navigator.pushReplacement(context,
+        MaterialPageRoute(builder: (BuildContext context) => ConversarPage()));
+  }
+  void _openAgendar() {
+    Navigator.pushReplacement(context,
+        MaterialPageRoute(builder: (BuildContext context) => AgendarPage()));
   }
 
   Widget build(BuildContext context) {
@@ -146,7 +156,9 @@ class _PerfilPageState extends State<PerfilPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: () => {},
+                  onPressed: () {
+                    _openAgendar();
+                  },
                   icon: Icon(Icons.calendar_today, color: Colors.black),
                   label: Text(
                     'Agendar monitoria',
@@ -171,7 +183,9 @@ class _PerfilPageState extends State<PerfilPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: () => {},
+                  onPressed: () {
+                    _openConversar();
+                  },
                   icon: Icon(Icons.chat, color: Colors.black),
                   label: Text(
                     'Conversar',

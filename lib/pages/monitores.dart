@@ -81,7 +81,7 @@ class _MonitoresPageState extends State<MonitoresPage> {
             child: Container(
               height: 60,
               child: GestureDetector(
-                onTap: (){
+                onTap: () {
                   _openPerfil();
                 },
                 child: Card(
@@ -124,37 +124,42 @@ class _MonitoresPageState extends State<MonitoresPage> {
             padding: EdgeInsets.only(top: 10, left: 30, right: 30),
             child: Container(
               height: 60,
-              child: Card(
-                color: Colors.amberAccent,
-                child: Row(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(left: 5, right: 35),
-                      child: Icon(
-                        Icons.person,
-                        size: 40,
-                        color: Colors.black,
+              child: GestureDetector(
+                onTap: () {
+                  _openPerfil();
+                },
+                child: Card(
+                  color: Colors.amberAccent,
+                  child: Row(
+                    children: <Widget>[
+                      Padding(
+                        padding: EdgeInsets.only(left: 5, right: 35),
+                        child: Icon(
+                          Icons.person,
+                          size: 40,
+                          color: Colors.black,
+                        ),
                       ),
-                    ),
-                    Center(
-                        child: Column(
-                      children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.only(top: 8),
-                          child: Text(
-                            "Paulo Junio Sales Rodrigues",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                      Center(
+                          child: Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.only(top: 8),
+                            child: Text(
+                              "Paulo Junio Sales Rodrigues",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          "Direito Constitucional",
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    ))
-                  ],
+                          Text(
+                            "Direito Constitucional",
+                            textAlign: TextAlign.left,
+                          ),
+                        ],
+                      ))
+                    ],
+                  ),
                 ),
               ),
             ),

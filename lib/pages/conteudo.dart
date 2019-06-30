@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'conteudo_material/forum.dart';
+import 'conteudo_material/notas_de_aula.dart';
 import 'conteudo_material/resumo.dart';
 import 'conteudo_material/videos.dart';
 import 'inicio.dart';
@@ -24,12 +26,12 @@ class _ConteudoPageState extends State<ConteudoPage> {
 
   void _openForum() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (BuildContext context) => VideosPage()));
+        context, MaterialPageRoute(builder: (BuildContext context) => ForumPage()));
   }
 
   void _openNotasAula() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (BuildContext context) => ResumosPage()));
+        context, MaterialPageRoute(builder: (BuildContext context) => NotasAulaPage()));
   }
 
   void _openResumo() {
@@ -133,7 +135,7 @@ class _ConteudoPageState extends State<ConteudoPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: () => {},
+                  onPressed: () {_openNotasAula();},
                   icon: Icon(Icons.note, color: Colors.black),
                   label: Text(
                     'Notas de aula',
@@ -158,7 +160,7 @@ class _ConteudoPageState extends State<ConteudoPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: () => {},
+                  onPressed: () {_openForum();},
                   icon: Icon(Icons.group, color: Colors.black),
                   label: Text(
                     'Fórum',

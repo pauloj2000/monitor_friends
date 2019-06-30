@@ -39,6 +39,10 @@ flutter:
   # the material Icons class.
   assets:
     - lib/assets/images/logo.png
+    - lib/assets/images/agendar.png
+    - lib/assets/images/saudavelmente.png
+    - lib/assets/images/prae.png
+
   uses-material-design: true
 
 
