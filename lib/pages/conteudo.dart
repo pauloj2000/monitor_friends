@@ -3,20 +3,17 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'apoio_psicologico.dart';
-import 'conteudo.dart';
-import 'indicadores.dart';
-import 'monitores.dart';
+import 'inicio.dart';
 
-class InicioPage extends StatefulWidget {
+class ConteudoPage extends StatefulWidget {
   @override
-  _InicioPageState createState() => _InicioPageState();
+  _ConteudoPageState createState() => _ConteudoPageState();
 }
 
-class _InicioPageState extends State<InicioPage> {
-  void _openMonitores() {
+class _ConteudoPageState extends State<ConteudoPage> {
+  void _openInicio() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (BuildContext context) => MonitoresPage()));
+        context, MaterialPageRoute(builder: (BuildContext context) => InicioPage()));
   }
   void _openConteudo() {
     Navigator.pushReplacement(
@@ -24,11 +21,11 @@ class _InicioPageState extends State<InicioPage> {
   }
   void _openApoio() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (BuildContext context) => ApoioPage()));
+        context, MaterialPageRoute(builder: (BuildContext context) => ConteudoPage()));
   }
   void _openIndicadores() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (BuildContext context) => IndicadoresPage()));
+        context, MaterialPageRoute(builder: (BuildContext context) => ConteudoPage()));
   }
 
   Widget build(BuildContext context) {
@@ -37,13 +34,20 @@ class _InicioPageState extends State<InicioPage> {
         backgroundColor: Colors.amber,
         title: Center(
           child: Text(
-            "Início",
+            "Conteúdo",
             style: TextStyle(
               color: Colors.black,
               fontSize: 20,
               fontFamily: "Ubuntu Bold",
             ),
           ),
+        ),
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
+          ),
+          onPressed: () {_openInicio();},
         ),
         actions: <Widget>[
           // action button
@@ -70,10 +74,10 @@ class _InicioPageState extends State<InicioPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: () {_openMonitores();},
+                  onPressed: () => {},
                   icon: Icon(Icons.supervised_user_circle, color: Colors.black),
                   label: Text(
-                    'Monitores',
+                    'Vídeos',
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 19,
@@ -95,10 +99,10 @@ class _InicioPageState extends State<InicioPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: () {_openConteudo();},
-                  icon: Icon(Icons.book, color: Colors.black),
+                  onPressed: () => {},
+                  icon: Icon(Icons.supervised_user_circle, color: Colors.black),
                   label: Text(
-                    'Conteúdo',
+                    'Resumos',
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 19,
@@ -120,10 +124,10 @@ class _InicioPageState extends State<InicioPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: () {_openApoio();},
-                  icon: Icon(Icons.person, color: Colors.black),
+                  onPressed: () => {},
+                  icon: Icon(Icons.supervised_user_circle, color: Colors.black),
                   label: Text(
-                    'Apoio psicológico',
+                    'Notas de aula',
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 19,
@@ -145,10 +149,10 @@ class _InicioPageState extends State<InicioPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: (){_openIndicadores();},
-                  icon: Icon(Icons.dashboard, color: Colors.black),
+                  onPressed: () => {},
+                  icon: Icon(Icons.supervised_user_circle, color: Colors.black),
                   label: Text(
-                    'Indicadores',
+                    'Fórum',
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 19,
