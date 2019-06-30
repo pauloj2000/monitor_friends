@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'conteudo_material/resumo.dart';
+import 'conteudo_material/videos.dart';
 import 'inicio.dart';
 
 class ConteudoPage extends StatefulWidget {
@@ -15,17 +17,24 @@ class _ConteudoPageState extends State<ConteudoPage> {
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (BuildContext context) => InicioPage()));
   }
-  void _openConteudo() {
+  void _openVideos() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (BuildContext context) => ConteudoPage()));
+        context, MaterialPageRoute(builder: (BuildContext context) => VideosPage()));
   }
-  void _openApoio() {
+
+  void _openForum() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (BuildContext context) => ConteudoPage()));
+        context, MaterialPageRoute(builder: (BuildContext context) => VideosPage()));
   }
-  void _openIndicadores() {
+
+  void _openNotasAula() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (BuildContext context) => ConteudoPage()));
+        context, MaterialPageRoute(builder: (BuildContext context) => ResumosPage()));
+  }
+
+  void _openResumo() {
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (BuildContext context) => ResumosPage()));
   }
 
   Widget build(BuildContext context) {
@@ -74,8 +83,8 @@ class _ConteudoPageState extends State<ConteudoPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: () => {},
-                  icon: Icon(Icons.supervised_user_circle, color: Colors.black),
+                  onPressed: () {_openVideos();},
+                  icon: Icon(Icons.video_library, color: Colors.black),
                   label: Text(
                     'Vídeos',
                     style: TextStyle(
@@ -99,8 +108,8 @@ class _ConteudoPageState extends State<ConteudoPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  onPressed: () => {},
-                  icon: Icon(Icons.supervised_user_circle, color: Colors.black),
+                  onPressed: () {_openResumo();},
+                  icon: Icon(Icons.view_day, color: Colors.black),
                   label: Text(
                     'Resumos',
                     style: TextStyle(
@@ -125,7 +134,7 @@ class _ConteudoPageState extends State<ConteudoPage> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   onPressed: () => {},
-                  icon: Icon(Icons.supervised_user_circle, color: Colors.black),
+                  icon: Icon(Icons.note, color: Colors.black),
                   label: Text(
                     'Notas de aula',
                     style: TextStyle(
@@ -150,7 +159,7 @@ class _ConteudoPageState extends State<ConteudoPage> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   onPressed: () => {},
-                  icon: Icon(Icons.supervised_user_circle, color: Colors.black),
+                  icon: Icon(Icons.group, color: Colors.black),
                   label: Text(
                     'Fórum',
                     style: TextStyle(

@@ -2,6 +2,7 @@ import 'dart:io';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:monitor_friends/pages/recompensas.dart';
 
 import 'apoio_psicologico.dart';
 import 'conteudo.dart';
@@ -29,6 +30,11 @@ class _InicioPageState extends State<InicioPage> {
   void _openIndicadores() {
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (BuildContext context) => IndicadoresPage()));
+  }
+
+  void _openRecompensas() {
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (BuildContext context) => RecompensasPage()));
   }
 
   Widget build(BuildContext context) {
@@ -149,6 +155,31 @@ class _InicioPageState extends State<InicioPage> {
                   icon: Icon(Icons.dashboard, color: Colors.black),
                   label: Text(
                     'Indicadores',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 19,
+                        fontFamily: 'Ubuntu'),
+                  ),
+                  elevation: 0.0,
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 20),
+            child: Center(
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width - 90,
+                height: 40.0,
+                child: RaisedButton.icon(
+                  color: Colors.amber.withOpacity(0.6),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  onPressed: (){_openRecompensas();},
+                  icon: Icon(Icons.monetization_on, color: Colors.black),
+                  label: Text(
+                    'Recompensas',
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 19,

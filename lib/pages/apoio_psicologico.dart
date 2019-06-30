@@ -63,8 +63,26 @@ class _ApoioPageState extends State<ApoioPage> {
       ),
       body: ListView(
         children: <Widget>[
+          Row(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(left: 15, top:  20),
+                child: Text("Você sabia que a UFG oferece um espaço de atendimento",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
+              ),
+            ],
+          ),
           Padding(
-            padding: EdgeInsets.only(top: 60),
+            padding: EdgeInsets.only(left: 15, top:  5),
+            child: Text("em saúde mental para a comunidade universitária?",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 40),
             child: Center(
               child: SizedBox(
                 width: MediaQuery.of(context).size.width - 90,
@@ -75,9 +93,9 @@ class _ApoioPageState extends State<ApoioPage> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   onPressed: () => {},
-                  icon: Icon(Icons.supervised_user_circle, color: Colors.black),
+                  icon: Icon(Icons.help, color: Colors.black),
                   label: Text(
-                    'Monitores',
+                    'Programa Saudavelmente',
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 19,

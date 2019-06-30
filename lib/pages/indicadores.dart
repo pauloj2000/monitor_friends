@@ -34,7 +34,7 @@ class _IndicadoresPageState extends State<IndicadoresPage> {
         backgroundColor: Colors.amber,
         title: Center(
           child: Text(
-            "Monitores",
+            "Indicadores",
             style: TextStyle(
               color: Colors.black,
               fontSize: 20,

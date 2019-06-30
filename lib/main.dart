@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Login'),
+      home: MyHomePage(title: 'Login'),
     );
   }
 }
@@ -116,9 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Center(
-                  child: Image.asset(
-                    "assets/images/teste.png",
-                  ),
+                  child: new Image.asset("lib/assets/images/logo.png",width:400,height:125)
                 ),
                 SizedBox(height: 45.0),
                 emailField,
@@ -130,6 +128,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 loginButon,
                 SizedBox(
                   height: 15.0,
+                ),
+                Center(
+                  child: Text(
+                    "Esqueci minha senha",
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
                 ),
               ],
             ),
