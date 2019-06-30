@@ -70,17 +70,20 @@ class _PerfilPageState extends State<PerfilPage> {
       ),
       body: ListView(
         children: <Widget>[
+          Center(
+              child: new Image.asset("lib/assets/images/perfil.png",width:200,height:150)
+          ),
           Row(
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(left: 15, top:  15),
+                padding: EdgeInsets.only(left: 50, top:  15),
                 child: Text("Nome:",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15, top: 15),
+                padding: EdgeInsets.only(left: 50, top: 15),
                 child: Text("Ana Clara Souza de Almeida"),
               ),
             ],
@@ -88,14 +91,14 @@ class _PerfilPageState extends State<PerfilPage> {
           Row(
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(left: 15, top:  15),
+                padding: EdgeInsets.only(left: 50, top:  15),
                 child: Text("Curso:",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                   ),),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15, top: 15),
+                padding: EdgeInsets.only(left: 50, top: 15),
                 child: Text("Direito"),
               ),
             ],
@@ -103,14 +106,14 @@ class _PerfilPageState extends State<PerfilPage> {
           Row(
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(left: 15, top:  15),
+                padding: EdgeInsets.only(left: 50, top:  15),
                 child: Text("Disciplinas:",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                   ),),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15, top: 15),
+                padding: EdgeInsets.only(left: 19, top: 15),
                 child: Text("Direito Constitucional"),
               ),
             ],
@@ -118,14 +121,14 @@ class _PerfilPageState extends State<PerfilPage> {
           Row(
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(left: 15, top:  15),
+                padding: EdgeInsets.only(left: 50, top:  15),
                 child: Text("Contato:",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                   ),),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15, top: 15),
+                padding: EdgeInsets.only(left: 36, top: 15),
                 child: Text("+55 (62) 99157-3200"),
               ),
             ],
@@ -133,14 +136,14 @@ class _PerfilPageState extends State<PerfilPage> {
           Row(
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(left: 15, top:  15),
+                padding: EdgeInsets.only(left: 50, top:  15),
                 child: Text("Eficiência:",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                   ),),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15, top: 15),
+                padding: EdgeInsets.only(left: 28, top: 15),
                 child: Text("9.3"),
               ),
             ],

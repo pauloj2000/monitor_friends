@@ -42,6 +42,7 @@ flutter:
     - lib/assets/images/agendar.png
     - lib/assets/images/saudavelmente.png
     - lib/assets/images/prae.png
+    - lib/assets/images/perfil.png
 
   uses-material-design: true
 

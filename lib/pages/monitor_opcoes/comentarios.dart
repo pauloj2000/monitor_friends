@@ -53,7 +53,7 @@ class _ComentariosPageState extends State<ComentariosPage> {
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 10, left: 30, right: 30),
+            padding: EdgeInsets.only(top: 10, left: 10, right: 10),
             child: Container(
               height: 100,
               child: Card(
@@ -64,48 +64,56 @@ class _ComentariosPageState extends State<ComentariosPage> {
                       padding: EdgeInsets.only(left: 5, right: 35),
                       child: Icon(
                         Icons.person,
-                        size: 40,
+                        size: 35,
                         color: Colors.black,
                       ),
                     ),
                     Center(
                         child: Column(
-                          children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.only(top: 8),
-                              child: Text(
-                                "Didático e explica muito bem, me",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.only(top: 8),
+                          child: Text(
+                            "Didático e explica muito bem, me",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
                             ),
-                            Text(
-                              "salvou na prova!",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Text(
-                              "Felipe Sozo Henrique Cardoso",
-                              textAlign: TextAlign.left,
-                            ),
-                            Text(
-                              "Ciências Aeronáuticas",
-                              textAlign: TextAlign.left,
-                            ),
-                          ],
-                        ))
+                          ),
+                        ),
+                        Text(
+                          "salvou na prova!",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "Felipe Sozo Henrique Cardoso",
+                          textAlign: TextAlign.left,
+                        ),
+                        Text(
+                          "Ciências Aeronáuticas",
+                          textAlign: TextAlign.left,
+                        ),
+                      ],
+                    )),
+                    Padding(
+                      padding: EdgeInsets.only(left: 25, right: 35),
+                      child: Icon(
+                        Icons.favorite,
+                        size: 35,
+                        color: Colors.red,
+                      ),
+                    ),
                   ],
                 ),
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 10, left: 30, right: 30),
+            padding: EdgeInsets.only(top: 10, left: 10, right: 10),
             child: Container(
               height: 100,
               child: Card(
@@ -122,42 +130,50 @@ class _ComentariosPageState extends State<ComentariosPage> {
                     ),
                     Center(
                         child: Column(
-                          children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.only(top: 8),
-                              child: Text(
-                                "Muito bom, consegui tirar todas ",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.only(top: 8),
+                          child: Text(
+                            "Muito bom, consegui tirar todas ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
                             ),
-                            Text(
-                              "minhas dúvidas!!",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Text(
-                              "Rafaela Liberatto Andrade",
-                              textAlign: TextAlign.left,
-                            ),
-                            Text(
-                              "Engenharia Civil",
-                              textAlign: TextAlign.left,
-                            ),
-                          ],
-                        ))
+                          ),
+                        ),
+                        Text(
+                          "minhas dúvidas!!",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "Rafaela Liberatto Andrade",
+                          textAlign: TextAlign.left,
+                        ),
+                        Text(
+                          "Engenharia Civil",
+                          textAlign: TextAlign.left,
+                        ),
+                      ],
+                    )),
+                    Padding(
+                      padding: EdgeInsets.only(left: 25, right: 35),
+                      child: Icon(
+                        Icons.favorite,
+                        size: 35,
+                        color: Colors.red,
+                      ),
+                    ),
                   ],
                 ),
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 10, left: 30, right: 30),
+            padding: EdgeInsets.only(top: 10, left: 10, right: 10),
             child: Container(
               height: 100,
               child: Card(
@@ -174,35 +190,43 @@ class _ComentariosPageState extends State<ComentariosPage> {
                     ),
                     Center(
                         child: Column(
-                          children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.only(top: 8),
-                              child: Text(
-                                "Me ajudou tanto que não me fez",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.only(top: 8),
+                          child: Text(
+                            "Me ajudou tanto que não me fez",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
                             ),
-                            Text(
-                              "desistir do meu curso!!",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Text(
-                              "Cláudio Mattos de Sousa",
-                              textAlign: TextAlign.left,
-                            ),
-                            Text(
-                              "Engenharia Ambiental e Florestal",
-                              textAlign: TextAlign.left,
-                            ),
-                          ],
-                        ))
+                          ),
+                        ),
+                        Text(
+                          "desistir do meu curso!!",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "Cláudio Mattos de Sousa",
+                          textAlign: TextAlign.left,
+                        ),
+                        Text(
+                          "Engenharia Ambiental e Florestal",
+                          textAlign: TextAlign.left,
+                        ),
+                      ],
+                    )),
+                    Padding(
+                      padding: EdgeInsets.only(left: 25, right: 35),
+                      child: Icon(
+                        Icons.favorite,
+                        size: 35,
+                        color: Colors.red,
+                      ),
+                    ),
                   ],
                 ),
               ),

@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'conteudo_material/banco_questoes.dart';
 import 'conteudo_material/forum.dart';
 import 'conteudo_material/notas_de_aula.dart';
 import 'conteudo_material/resumo.dart';
@@ -38,6 +39,12 @@ class _ConteudoPageState extends State<ConteudoPage> {
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (BuildContext context) => ResumosPage()));
   }
+
+  void _openBancoQuestoes() {
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (BuildContext context) => BancoQuestoesPage()));
+  }
+
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,6 +96,31 @@ class _ConteudoPageState extends State<ConteudoPage> {
                   icon: Icon(Icons.video_library, color: Colors.black),
                   label: Text(
                     'Vídeos',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 19,
+                        fontFamily: 'Ubuntu'),
+                  ),
+                  elevation: 0.0,
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 20),
+            child: Center(
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width - 90,
+                height: 40.0,
+                child: RaisedButton.icon(
+                  color: Colors.amber.withOpacity(0.6),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  onPressed: () {_openBancoQuestoes();},
+                  icon: Icon(Icons.question_answer, color: Colors.black),
+                  label: Text(
+                    'Banco de questões',
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 19,

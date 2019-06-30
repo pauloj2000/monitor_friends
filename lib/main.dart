@@ -58,8 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
 
     final emailField = TextField(
-      obscureText: true,
       style: style,
+      controller: TextEditingController(text: "hackatonufg@gmail.com"),
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
           hintText: "Email",
@@ -73,6 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final passwordField = TextField(
       obscureText: true,
       style: style,
+      controller: TextEditingController(text: "p123010"),
       decoration: InputDecoration(
         hintStyle: TextStyle(
           fontFamily: "Ubuntu",

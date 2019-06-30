@@ -55,19 +55,34 @@ class _AgendarPageState extends State<AgendarPage> {
           Container(
             padding: EdgeInsets.only(top: 20),
             child: Text(
-              "Confirme seu horário:", textAlign: TextAlign.center,
-              style:
-              TextStyle(
-                color: Colors.black,
-                fontSize: 15,
+              "Confirme seu horário:",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.black54,
+                fontSize: 16,
                 backgroundColor: Colors.white30,
-              ),),
+              ),
+            ),
           ),
           Center(
-              child: new Image.asset("lib/assets/images/agendar.png",width:900,height:350)
+              child: new Image.asset("lib/assets/images/agendar.png",
+                  width: 900, height: 350)),
+          Container(
+            padding: EdgeInsets.only(top: 10),
+            child: Text(
+              "Direito Constitucional",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.black54,
+                fontSize: 20,
+                backgroundColor: Colors.white30,
+                fontFamily: "Ubuntu",
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 20),
+            padding: EdgeInsets.only(top: 30),
             child: Center(
               child: SizedBox(
                 width: MediaQuery.of(context).size.width - 90,
